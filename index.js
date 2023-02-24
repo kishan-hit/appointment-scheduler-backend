@@ -104,6 +104,11 @@ app.use("/user",userDetail)
 //     })
 // })
 
+app.get("/health",(req,res)=>{
+    res.send("Up and running");
+});
+
 app.listen(port,()=>{
     console.log(`Listening at port ${port}`);
 })
+
