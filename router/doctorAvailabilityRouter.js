@@ -57,6 +57,8 @@ router.post("/:duration", (req, res) => {
             //         })
             //     }
             // })
+            console.log("stime",a)
+            console.log("etime",b)
             let doctorAvailability = new DoctorAvailability({
                 user_id,
                 start_time : a,

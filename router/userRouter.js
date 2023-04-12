@@ -18,8 +18,10 @@ router.post("/register",(req,res)=>{
             })
             user.save((err,data)=>{
                 if(err){
+                    console.log(err)
                     res.send(err)
                 }else{
+                    console.log(data);
                     res.send({message: "Successfully Registered","data":data})
                 }
             })

@@ -20,7 +20,7 @@ var doctorAppointment = require("./router/doctorAppointmentRouter.js")
 var doctorAvail = require("./router/doctorDetailsRouter.js")
 var userDetail = require("./router/userDetailsRouter.js")
 
-mongoose.connect("mongodb://localhost:27017/myLoginRegisterDB",{
+mongoose.connect("mongodb+srv://kishan:Kishan1234@cluster0.m2zbzon.mongodb.net/?retryWrites=true&w=majority",{
     useNewUrlParser: true,
     useUnifiedTopology: true
 },()=>{ 
